@@ -1,6 +1,7 @@
 package com.example.a6129.repository
 
 import com.example.a6129.models.Client
+import com.example.a6129.service.ClientService
 
 interface ClientRepo {
     suspend fun getKlien(): List<Client>
