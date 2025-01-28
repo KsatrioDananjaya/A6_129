@@ -10,6 +10,13 @@ import com.example.a6129.models.Client
 import com.example.a6129.repository.ClientRepo
 import kotlinx.coroutines.launch
 
+object DestinasiDetailKlien: DestinasiNavigasi {
+    override val route = "detail klien"
+    const val ID_KLIEN = "id_klien"
+    override val titleRes = "Detail Klien"
+    val routeWithArg = "$route/{$ID_KLIEN}"
+}
+
 class ClientDetailVM(
     savedStateHandle: SavedStateHandle,
     private val klienRepository: ClientRepo

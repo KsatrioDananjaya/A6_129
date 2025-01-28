@@ -17,7 +17,7 @@ sealed class ClientUiState {
     object Loading : ClientUiState()
 }
 
-class KlienHomeVM(
+class ClientHomeVM(
     klienRepository1: SavedStateHandle,
     private val klienRepository: ClientRepo
 ) : ViewModel() {
