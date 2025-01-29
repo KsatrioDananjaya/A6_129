@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.a6129.ui.navigation.PengelolaHalaman
 import com.example.a6129.ui.theme.A6129Theme
 
 class MainActivity : ComponentActivity() {
@@ -20,9 +21,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             A6129Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
+                    PengelolaHalaman(modifier = Modifier.padding(innerPadding)
                     )
                 }
             }
